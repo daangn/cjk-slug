@@ -5,9 +5,15 @@
   "source": "./src/index.ts",
   "main": "./lib/index.js",
   "module": "./lib/index.module.js",
-  "exports": "./lib/index.modern.js",
   "unpkg": "./lib/index.umd.js",
   "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./lib/index.js",
+      "import": "./lib/index.module.js"
+    },
+    "./package.json": "./package.json"
+  },
   "homepage": "https://github.com/daangn/cjk-slug",
   "repository": {
     "type": "git",
