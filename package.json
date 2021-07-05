@@ -1,0 +1,34 @@
+{
+  "name": "cjk-slug",
+  "version": "0.1.0",
+  "license": "MIT",
+  "source": "./src/index.ts",
+  "main": "./src/index.ts",
+  "types": "./lib/index.d.ts",
+  "publishConfig": {
+    "main": "./lib/index.js",
+    "module": "./lib/index.module.js",
+    "exports": "./lib/index.modern.js",
+    "unpkg": "./lib/index.umd.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daangn/cjk-slug.git"
+  },
+  "author": {
+    "name": "Hyeseong Kim",
+    "email": "tim@daangn.com"
+  },
+  "scripts": {
+    "prepack": "yarn build",
+    "test": "uvu -r esbuild-register",
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "devDependencies": {
+    "esbuild-register": "^2.6.0",
+    "microbundle": "^0.13.3",
+    "typescript": "^4.3.5",
+    "uvu": "^0.5.1"
+  }
+}
