@@ -1,7 +1,7 @@
 # cjk-slug
 
-![Package version](https://img.shields.io/npm/v/cjk-slug)
-![License](https://img.shields.io/npm/l/cjk-slug)
+[![Package version](https://img.shields.io/npm/v/cjk-slug)](https://npm.im/cjk-slug)
+[![License](https://img.shields.io/npm/l/cjk-slug)](#License)
 
 URL-friendly string converter that supports CJK characters
 
