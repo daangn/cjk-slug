@@ -3,14 +3,11 @@
   "version": "0.1.0",
   "license": "MIT",
   "source": "./src/index.ts",
-  "main": "./src/index.ts",
+  "main": "./lib/index.js",
+  "module": "./lib/index.module.js",
+  "exports": "./lib/index.modern.js",
+  "unpkg": "./lib/index.umd.js",
   "types": "./lib/index.d.ts",
-  "publishConfig": {
-    "main": "./lib/index.js",
-    "module": "./lib/index.module.js",
-    "exports": "./lib/index.modern.js",
-    "unpkg": "./lib/index.umd.js"
-  },
   "homepage": "https://github.com/daangn/cjk-slug",
   "repository": {
     "type": "git",
