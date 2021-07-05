@@ -27,13 +27,11 @@ const cjkSlug: CjkSlug = (
     //   4e00 - 9faf: CJK unified ideographs - Common and uncommon Kanji
     //   ac00 - d7a3: Korean completed words (가-힣)
     //   ff00 - ff9f: Full-width Roman characters and half-width Katakana
-    .replace(/([^a-zA-Z\d\-\u3040-\u309f\u30a0-\u30ff\u3400-\u4dbf\u4e00-\u9faf\uac00-\ud7a3\uff00-\uff9f])/g, '-')
+    .replace(/[^a-z\d\-\u3040-\u309f\u30a0-\u30ff\u3400-\u4dbf\u4e00-\u9faf\uac00-\ud7a3\uff00-\uff9f]/gi, '-')
     // replace multiple dashes to a single dash
     .replace(/-+/g, '-')
-    // remove leading dashes
-    .replace(/^-(.*)/, '$1')
-    // remove trailing dashes
-    .replace(/(.*)-$/, '$1')
+    // remove leading / trailing dashes
+    .replace(/^-|-$/g, '')
 
   return lowercase
     ? slug.toLowerCase()
