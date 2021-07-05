@@ -2,6 +2,7 @@
   "name": "cjk-slug",
   "version": "0.1.2",
   "license": "MIT",
+  "sideEffects": false,
   "source": "./src/index.ts",
   "main": "./lib/index.js",
   "module": "./lib/index.module.js",
