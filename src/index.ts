@@ -14,7 +14,7 @@ const cjkSlug: CjkSlug = (
   } = {},
 ) => {
   const slug = title
-    // replace all whitespace to a dash
+    // replace all whitespaces to a dash
     .replace(/[\s_]+/g, '-')
     // replace non-allowed sequences to a dash
     // allowed sequences:
