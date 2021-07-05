@@ -1,7 +1,8 @@
 # cjk-slug
 
-[![Package version](https://img.shields.io/npm/v/cjk-slug)](https://npm.im/cjk-slug)
+[![Package Version](https://img.shields.io/npm/v/cjk-slug)](https://npm.im/cjk-slug)
 [![License](https://img.shields.io/npm/l/cjk-slug)](#License)
+[![NPM Bundle Size](https://img.shields.io/bundlephobia/minzip/cjk-slug)](https://bundlephobia.com/package/cjk-slug)
 
 URL-friendly string converter that supports CJK characters
 
