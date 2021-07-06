@@ -14,9 +14,9 @@ const cjkSlug: CjkSlug = (
   } = {},
 ) => {
   const slug = title
-    // replace all whitespace to a dash
+    // replace all whitespaces with a dash
     .replace(/[\s_]+/g, '-')
-    // replace non-allowed sequences to a dash
+    // replace non-allowed sequences with a dash
     // allowed sequences:
     // - Alphanumeric
     // - Dash
@@ -28,7 +28,7 @@ const cjkSlug: CjkSlug = (
     //   ac00 - d7a3: Korean completed words (가-힣)
     //   ff00 - ff9f: Full-width Roman characters and half-width Katakana
     .replace(/[^a-z\d\-\u3040-\u309f\u30a0-\u30ff\u3400-\u4dbf\u4e00-\u9faf\uac00-\ud7a3\uff00-\uff9f]/gi, '-')
-    // replace multiple dashes to a single dash
+    // replace multiple dashes with a single dash
     .replace(/-+/g, '-')
     // remove leading / trailing dashes
     .replace(/^-|-$/g, '')
