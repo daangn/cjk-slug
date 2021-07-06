@@ -8,6 +8,7 @@ const cases: Array<[input: string, output: string]> = [
   ['PM/기획', 'pm-기획'],
   ['개발 (iOS / 안드로이드)', '개발-ios-안드로이드'],
   ['ホロライブプロダクション Hororaibu Purodakushon', 'ホロライブプロダクション-hororaibu-purodakushon'],
+  ['Parse, don’t validate', 'parse-don-t-validate'],
   ['------title------', 'title'],
 ];
 
