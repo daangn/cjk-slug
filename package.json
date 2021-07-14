@@ -1,6 +1,6 @@
 {
   "name": "cjk-slug",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "license": "MIT",
   "sideEffects": false,
   "source": "./src/index.ts",
