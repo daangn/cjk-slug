@@ -2301,6 +2301,11 @@ node-releases@^1.1.71:
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.73.tgz#dd4e81ddd5277ff846b80b52bb40c49edf7a7b20"
   integrity sha512-uW7fodD6pyW2FZNZnp/Z3hvWKeEW1Y8R1+1CnErE8cXFXzl5blBOoVB41CvMer6P6Q0S5FXDwcHgFd1Wj0U9zg==
 
+normalize-cjk@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/normalize-cjk/-/normalize-cjk-0.1.0.tgz#dfe49677b7ec1279cd3eed4dea56d7f213eac447"
+  integrity sha512-KQaclrPkIaUljUxxL24pvTZ1nTqxBBjSqnJfJsB5ZbX8rqSAkNfVQIwdB1TAbvj5ICRkLwY0j+vd0vrH2fZ3lg==
+
 normalize-range@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/normalize-range/-/normalize-range-0.1.2.tgz#2d10c06bdfd312ea9777695a4d28439456b75942"

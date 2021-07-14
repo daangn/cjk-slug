@@ -1,8 +1,11 @@
+import { normalize as normalizeCjk } from 'normalize-cjk';
+
 interface CjkSlug {
   (
     title: string,
     options?: {
       lowercase?: boolean,
+      normalize?: (input: string) => string,
     },
   ): string;
 }
@@ -11,9 +14,10 @@ const cjkSlug: CjkSlug = (
   title,
   {
     lowercase = true,
+    normalize = normalizeCjk,
   } = {},
 ) => {
-  const slug = title
+  let slug = normalize(title)
     // replace all whitespaces with a dash
     .replace(/[\s_]+/g, '-')
     // replace non-allowed sequences with a dash
@@ -31,11 +35,13 @@ const cjkSlug: CjkSlug = (
     // replace multiple dashes with a single dash
     .replace(/-+/g, '-')
     // remove leading / trailing dashes
-    .replace(/^-|-$/g, '')
+    .replace(/^-|-$/g, '');
 
-  return lowercase
-    ? slug.toLowerCase()
-    : slug;
+  if (lowercase) {
+    slug = slug.toLowerCase();
+  }
+
+  return slug;
 };
 
 export default cjkSlug;
