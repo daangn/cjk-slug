@@ -15,6 +15,12 @@ slugify('당근마켓 - 대한민국 1등 동네 커뮤니티');
 // => 당근마켓-대한민국-1등-동네-커뮤니티
 ```
 
+## Other languages
+
+This package only cares about CJK characters.
+
+You can use [`@sindresorhus/transliterate`](https://github.com/sindresorhus/transliterate) as needed.
+
 ## License
 
 MIT
