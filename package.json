@@ -5,13 +5,13 @@
   "sideEffects": false,
   "source": "./src/index.ts",
   "main": "./lib/index.js",
-  "module": "./lib/index.module.js",
+  "module": "./lib/index.mjs",
   "unpkg": "./lib/index.umd.js",
   "types": "./lib/index.d.ts",
   "exports": {
     ".": {
       "require": "./lib/index.js",
-      "import": "./lib/index.module.js"
+      "import": "./lib/index.mjs"
     },
     "./package.json": "./package.json"
   },
@@ -39,7 +39,7 @@
   "scripts": {
     "prepack": "yarn build",
     "test": "uvu -r esbuild-register",
-    "build": "microbundle",
+    "build": "microbundle --format esm,cjs,umd",
     "dev": "microbundle watch"
   },
   "devDependencies": {
