@@ -47,6 +47,6 @@
     "uvu": "^0.5.1"
   },
   "dependencies": {
-    "normalize-cjk": "^0.1.0"
+    "normalize-cjk": "^0.2.0"
   }
 }
