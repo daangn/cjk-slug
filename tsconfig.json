@@ -6,7 +6,8 @@
     "strict": true,
     "composite": true,
     "incremental": true,
-    "rootDir": "src"
+    "rootDir": "src",
+    "outDir": "lib"
   },
   "include": ["src"]
 }
