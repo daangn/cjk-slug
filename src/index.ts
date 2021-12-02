@@ -18,6 +18,18 @@ const cjkSlug: CjkSlug = (
   } = {},
 ) => {
   let slug = normalize(title)
+    // strip quotation marks
+    // - 0022: quotation mark (")
+    // - 0027: apostrophe (')
+    // - ff07: full-width apostrophe
+    // - 02bc: modifier letter apostrophe
+    // - 0060: grave accent
+    // - 00b4: acute accent
+    // - 2018: left single quotation mark
+    // - 2019: right single quotation mark
+    // - 201c: left double quotation mark
+    // - 201d: right double quotation mark
+    .replace(/[\u0022\u0027\uff07\u02bc\u0060\u00b4\u2018\u2019\u201c\u201d]/g, '')
     // replace all whitespaces with a dash
     .replace(/[\s_]+/g, '-')
     // replace non-allowed sequences with a dash
