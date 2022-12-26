@@ -37,7 +37,7 @@
   "scripts": {
     "prepack": "yarn build",
     "test": "uvu -r tsm",
-    "build": "nanobundle build --minify=false"
+    "build": "nanobundle build"
   },
   "dependencies": {
     "normalize-cjk": "^0.4.0"
