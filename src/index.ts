@@ -1,22 +1,14 @@
 import { normalize as normalizeCjk } from 'normalize-cjk';
 
-interface CjkSlug {
-  (
-    title: string,
-    options?: {
-      lowercase?: boolean,
-      normalize?: (input: string) => string,
-    },
-  ): string;
+interface CjkSlugOptions {
+  lowercase?: boolean;
+  normalize?: (input: string) => string;
 }
 
-const cjkSlug: CjkSlug = (
-  title,
-  {
-    lowercase = true,
-    normalize = normalizeCjk,
-  } = {},
-) => {
+export default function cjkSlug(
+  title: string,
+  { lowercase = true, normalize = normalizeCjk }: CjkSlugOptions = {},
+): string {
   let slug = normalize(title)
     // strip half-width quotation marks
     // - 0022: quotation mark (")
@@ -53,6 +45,4 @@ const cjkSlug: CjkSlug = (
   }
 
   return slug;
-};
-
-export default cjkSlug;
+}
