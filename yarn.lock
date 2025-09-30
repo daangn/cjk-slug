@@ -226,7 +226,7 @@ __metadata:
   dependencies:
     "@types/node": "npm:^24.6.0"
     nanobundle: "npm:^2.1.0"
-    normalize-cjk: "npm:^0.4.0"
+    normalize-cjk: "npm:^0.5.0"
     typescript: "npm:^5.9.2"
   languageName: unknown
   linkType: soft
@@ -380,10 +380,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"normalize-cjk@npm:^0.4.0":
-  version: 0.4.0
-  resolution: "normalize-cjk@npm:0.4.0"
-  checksum: 10c0/156453a03115a52b8572241777d426a4b1ebdafa429b6575c369e04ca003b279c8992d9ceb5480e7673deab14f15bda489faed9d0904080f1927dcff1a67aeaf
+"normalize-cjk@npm:^0.5.0":
+  version: 0.5.0
+  resolution: "normalize-cjk@npm:0.5.0"
+  checksum: 10c0/50d16b48e6b91b43e77de77cbbea5751fec7c87cbcb3204ad2830076c1fa08cf4d99f87a360ec710cde53868240085b4f85737c7d27d7a70b4d97acb50022f96
   languageName: node
   linkType: hard
 
