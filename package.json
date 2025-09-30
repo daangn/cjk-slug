@@ -47,5 +47,5 @@
     "typescript": "^5.0.4",
     "uvu": "^0.5.6"
   },
-  "packageManager": "yarn@3.5.1"
+  "packageManager": "yarn@4.10.3"
 }
