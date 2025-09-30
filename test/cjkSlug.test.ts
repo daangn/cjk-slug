@@ -1,7 +1,7 @@
-import { test } from 'uvu';
-import * as assert from 'uvu/assert';
+import { test } from 'node:test';
+import * as assert from 'node:assert/strict';
 
-import cjkSlug from '../src';
+import cjkSlug from '../src/index.ts';
 
 const cases: Array<[input: string, output: string]> = [
   ['당근마켓 - 대한민국 1등 동네 커뮤니티', '당근마켓-대한민국-1등-동네-커뮤니티'],
@@ -16,9 +16,7 @@ const cases: Array<[input: string, output: string]> = [
 ];
 
 for (const [input, output] of cases) {
-  test(`cjkSlug(${input})`, () => {
-    assert.is(cjkSlug(input), output);
+  await test(`cjkSlug(${input})`, () => {
+    assert.strictEqual(cjkSlug(input), output);
   });
 }
-
-test.run();

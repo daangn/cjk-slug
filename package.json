@@ -2,18 +2,6 @@
   "name": "cjk-slug",
   "version": "0.3.1",
   "license": "MIT",
-  "sideEffects": false,
-  "type": "module",
-  "main": "./lib/index.mjs",
-  "types": "./lib/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./lib/index.d.ts",
-      "require": "./lib/index.cjs",
-      "import": "./lib/index.mjs"
-    },
-    "./package.json": "./package.json"
-  },
   "homepage": "https://github.com/daangn/cjk-slug",
   "repository": {
     "type": "git",
@@ -29,23 +17,33 @@
     "slug",
     "cjk"
   ],
+  "type": "module",
+  "main": "./lib/index.mjs",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "require": "./lib/index.cjs",
+      "import": "./lib/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
   "files": [
     "src",
     "lib"
   ],
   "scripts": {
     "prepack": "yarn build --clean",
-    "test": "uvu -r tsm",
+    "test": "node --test",
     "build": "nanobundle build"
   },
   "dependencies": {
     "normalize-cjk": "^0.4.0"
   },
   "devDependencies": {
-    "nanobundle": "^1.6.0",
-    "tsm": "^2.3.0",
-    "typescript": "^5.0.4",
-    "uvu": "^0.5.6"
+    "@types/node": "^24.6.0",
+    "nanobundle": "^2.1.0",
+    "typescript": "^5.9.2"
   },
   "packageManager": "yarn@4.10.3"
 }
